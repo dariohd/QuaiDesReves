@@ -170,10 +170,13 @@
 
   /* ---- Gallery lightbox ---- */
   const galleryItems = document.querySelectorAll('.gallery__item');
-  galleryImages = Array.from(galleryItems).map(item => ({
-    src: item.querySelector('img').src,
-    alt: item.querySelector('img').alt
-  }));
+  galleryImages = Array.from(galleryItems).map(item => {
+    const img = item.querySelector('img');
+    return {
+      src: img.currentSrc || img.src,
+      alt: img.alt
+    };
+  });
 
   galleryItems.forEach((item, index) => {
     item.addEventListener('click', () => openLightbox(index));

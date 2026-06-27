@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://etape-velo-gr37.fr/sitemap.xml

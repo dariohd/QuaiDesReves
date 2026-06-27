@@ -1187,6 +1187,16 @@ ul { list-style: none; }
   border-top: 1px solid var(--border);
 }
 
+.footer a {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.footer a:hover {
+  color: var(--accent);
+}
+
 /* ---- Lightbox ---- */
 .lightbox {
   position: fixed;

@@ -1,0 +1,18 @@
+{
+  "name": "Quai des Rêves — Chambre d'hôtes",
+  "short_name": "Quai des Rêves",
+  "description": "Ancienne gare devenue chambre d'hôtes sur le GR37 à Saint-Méen-le-Grand, Bretagne.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f7f3eb",
+  "theme_color": "#3d3027",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
