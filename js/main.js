@@ -306,7 +306,7 @@
         _subject: `Réservation — ${fields.nom} — ${formatDate(fields.arrivee)}`,
         message: body,
         _template: 'table',
-        _captcha: 'false'
+        _captcha: 'true'
       })
     });
 
@@ -346,6 +346,11 @@
       if (depart <= arrivee) {
         showFormStatus('La date de départ doit être postérieure à la date d\'arrivée.', 'error');
         departInput.focus();
+        return;
+      }
+
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showFormStatus('Adresse email invalide.', 'error');
         return;
       }
 
